@@ -19,9 +19,9 @@ Hone your CSS skills by building one project every week. Take any UI Design code
 
 [Project sample:
 
-| Project# | Name                | Description          | Category | Start Date   | Finish Date  |
-| -------- | ------------------- | -------------------- | -------- | ------------ | ------------ |
-| 1        | Dashboard challenge | Covid-19 dashboard   | Personal | 18 Jan, 2021 | 23 Jan, 2021 |
-| 2        | Product             | Product landing page | Personal | 07 Feb, 2021 | 07 Feb, 2021 |
-|          |                     |                      |          |              |              |
+| Project# | Name                 | Description                | Category | Start Date   | Finish Date  |
+| -------- | -------------------- | -------------------------- | -------- | ------------ | ------------ |
+| 1        | Dashboard challenge  | Covid-19 dashboard         | Personal | 18 Jan, 2021 | 23 Jan, 2021 |
+| 2        | Product              | Product landing page       | Personal | 07 Feb, 2021 | 07 Feb, 2021 |
+| 3        | Social Proof Section | Front-end mentor challenge | Personal | 12 Feb, 2021 | 12 Feb, 2021 |
 
