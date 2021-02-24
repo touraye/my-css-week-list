@@ -1,0 +1,161 @@
+:root {
+  /* primary colors */
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  /* neutral colors */
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  /* alignment */
+  --txt-center: center;
+}
+
+*::after,
+::before {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background: var(--Very-Light-Gray);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+h1 {
+  text-align: var(--txt-center);
+  margin: 0;
+  font-size: 1.6rem;  
+}
+
+h1.shaded {
+  font-weight: 300;
+}
+
+p {
+  color: var(--Grayish-Blue);
+}
+
+.para {
+  text-align: var(--txt-center);
+  font-size: 1rem;
+  margin-bottom: 4rem;
+}
+
+.section-center {
+  max-width: 375px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.card {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 1.8rem;
+  margin-bottom: 1.9rem;
+  box-shadow: 1px 2px 5px 5px rgba(196, 192, 192, 0.5);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.txt {
+  align-items: flex-start;
+}
+
+.svg {
+  align-self: flex-end;
+  padding-right: 1rem;
+  margin-top: 2rem;
+}
+
+.card1 {
+  border-top: 5px solid var(--Cyan);
+}
+
+.card2 {
+  border-top: 5px solid var(--Red);
+}
+
+.card3 {
+  border-top: 5px solid var(--Orange);
+}
+
+.card4 {
+  border-top: 5px solid var(--Blue);
+}
+
+/* 
+======================
+    Desktop view
+======================
+*/
+
+@media (min-width: 1200px) {
+  .section-center {
+    max-width: 1440px;
+    margin: auto;
+  }
+
+  .section-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  .card {
+    margin: 0;
+  }
+  .mid-card {
+    margin: 0 2rem;
+  }
+
+  .card2 {
+    margin-bottom: 2rem;
+  }
+  .para {
+    text-align: var(--txt-center);
+    font-size: 1.4rem;
+    max-width: 500px;
+    margin: 1rem auto;
+  }
+}
+
+/*
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+
+
+
+
+
+### Neutral
+
+
+
+
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Fonts
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 200, 400, 600
+*/
