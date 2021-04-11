@@ -1,0 +1,205 @@
+:root {
+  --primary-clr: #fff;
+  --secondary-clr: #111;
+  --red-clr: red;
+  --yellow-clr: yellow;
+  --green-clr: green;
+  --dot-clr: rgb(129, 21, 93);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #fff;
+}
+
+ul li {
+  list-style: none;
+}
+
+.wrapper {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.clock-frame {
+  width: 240px;
+  height: 240px;
+  background: var(--secondary-clr);
+  position: relative;
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.clock-shape {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  border-top: 3px solid var(--red-clr);
+  border-right: 3px solid var(--yellow-clr);
+  border-left: 3px solid var(--green-clr);
+  top: 29px;
+  left: 11%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+/* CLOCK STICKS */
+.sec {
+  position: absolute;
+  width: 2px;
+  height: 67px;
+  background: var(--red-clr);
+  top: 50px;
+  left: 50%;
+  transform: rotate(110deg);
+  transform-origin: 100% 100%;
+  -webkit-transform: rotate(110deg);
+  -moz-transform: rotate(110deg);
+  -ms-transform: rotate(110deg);
+  -o-transform: rotate(110deg);
+}
+
+.min {
+  position: absolute;
+  width: 2px;
+  height: 67px;
+  background: var(--primary-clr);
+  top: 50px;
+  left: 50%;
+  transform: rotate(340deg);
+  transform-origin: 100% 100%;
+  -webkit-transform: rotate(340deg);
+  -moz-transform: rotate(340deg);
+  -ms-transform: rotate(340deg);
+  -o-transform: rotate(340deg);
+}
+
+.hour {
+  position: absolute;
+  width: 3px;
+  height: 67px;
+  background: var(--yellow-clr);
+  top: 50px;
+  left: 50%;
+  transform: rotate(358deg);
+  transform-origin: 100% 100%;
+  -webkit-transform: rotate(358deg);
+  -moz-transform: rotate(358deg);
+  -ms-transform: rotate(358deg);
+  -o-transform: rotate(358deg);
+}
+
+.dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--dot-clr);
+  border: 1px solid var(--primary-clr);
+  top: 110px;
+  /* left: 50%; */
+  left: 115px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+/* CLOCK DIGITS */
+.li-12 {
+  position: absolute;
+  top: 13px;
+  left: 109px;
+  color: var(--primary-clr);
+}
+
+.li-1 {
+  position: absolute;
+  top: 22px;
+  left: 159px;
+  color: var(--primary-clr);
+}
+
+.li-2 {
+  position: absolute;
+  top: 55px;
+  left: 198px;
+  color: var(--primary-clr);
+}
+
+.li-3 {
+  position: absolute;
+  top: 107px;
+  left: 214px;
+  color: var(--primary-clr);
+}
+
+.li-4 {
+  position: absolute;
+  top: 149px;
+  left: 207px;
+  color: var(--primary-clr);
+}
+
+.li-5 {
+  position: absolute;
+  top: 192px;
+  left: 174px;
+  color: var(--primary-clr);
+}
+
+.li-6 {
+  position: absolute;
+  top: 212px;
+  left: 110px;
+  color: var(--primary-clr);
+}
+
+.li-7 {
+  position: absolute;
+  top: 192px;
+  left: 55px;
+  color: var(--primary-clr);
+}
+
+.li-8 {
+  position: absolute;
+  top: 149px;
+  left: 23px;
+  color: var(--primary-clr);
+}
+
+.li-9 {
+  position: absolute;
+  top: 107px;
+  left: 17px;
+  color: var(--primary-clr);
+}
+
+.li-10 {
+  position: absolute;
+  top: 55px;
+  left: 25px;
+  color: var(--primary-clr);
+}
+
+.li-11 {
+  position: absolute;
+  top: 22px;
+  left: 65px;
+  color: var(--primary-clr);
+}
