@@ -27,4 +27,5 @@ Hone your CSS skills by building one project every week. Take any UI Design code
 | 4        | Four feature         | Front-end mentor challenge | Personal | 23 Feb, 2021   | 24 Feb, 2021   |
 | 5        | Blog Card            | Blog card post             | Personal | 17 Mar, 2021   | 19 Mar, 2021   |
 | 6        | Clock                | CSS Clock                  | Personal | 11 April, 2021 | 11 April, 2021 |
+| 7        | ID Card              | ID card challenge          | Personal | 22 April, 2021 | 22 April, 2021 |
 
