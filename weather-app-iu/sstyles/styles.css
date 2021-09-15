@@ -1,0 +1,225 @@
+:root {
+    --primary-clr: rgb(123, 123, 143);
+    --secondary-clr: rgb(221, 221, 240);
+    --text-upper-case: uppercase;
+    --letter-spacing-1: 0.143rem;
+    --letter-spacing-2: 0.243rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ line-height: 1.5;
+ background-image: linear-gradient(0deg, rgb(69, 23, 100) 23.8%, rgb(248, 176, 242) 92%);
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    margin: 0 1rem;
+}
+
+
+.preview {    
+    position: relative;
+    background-image: linear-gradient(rgba(22, 50, 175, 0.3), rgb(10, 0, 8)), url(../assets/bjl.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 1rem;
+    color: #fff;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+
+.preview .tem {
+    font-size: 3rem;
+    font-weight: 400;       
+}
+
+.weather {
+    color: var(--secondary-clr);
+    text-transform: var(--text-upper-case);
+    letter-spacing: var(--letter-spacing-2);
+}
+
+.preview .info {
+    margin-left: 4rem;
+}
+
+.preview .condition {
+    display: flex;
+    gap: 2rem;    
+    margin-top: 1rem;
+}
+
+.preview .condition h3 {
+    text-transform: uppercase;
+    font-size: 0.776rem;
+    letter-spacing: var(--letter-spacing-1);
+    font-weight: 300;
+    color: var(--secondary-clr);
+}
+
+.preview .condition span {
+    text-align: center;
+}
+
+.condition span:nth-child(2){
+    border-right: 2px solid #5f5f5f;
+    height: 50px;
+}
+
+.city {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: var(--letter-spacing-2);
+}
+
+.city::after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    height: 2px;
+    width: calc(100% - 40%);
+    margin: 0 auto;
+    top: 29px;
+    right: 19px;
+}
+
+/* .underline {
+    border-bottom: 2px solid #fff;
+    width: 70px;
+} */
+
+.maps {
+    background-color: whitesmoke;    
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0.765rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.one {
+    padding-top: 1.6rem;
+}
+
+.one .tweet-head {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.872rem;
+}
+
+.tweet-head i:nth-child(1) {
+    color: blue;
+    font-size: 1.565rem;
+}
+.tweet-head h3 {    
+    font-size: 0.985rem;
+    color: rgb(58, 57, 57);    
+}
+
+.tweet-head i:nth-child(3) {
+    /* color: rgb(123, 123, 143); */
+    color: var(--primary-clr);
+    font-style: normal;
+}
+
+.tweet {
+    display: flex;
+    align-items: center;
+    gap: 1rem;    
+}
+
+.tweet:first-child {
+    margin-bottom: 0.876rem;
+}
+
+.tweet .bod {
+    background-color: lightblue;
+    padding: 0.5rem 0.9rem;
+    border-radius: 50%;
+}
+
+.tweet p {
+    font-size: 0.743rem;
+    color: var(--primary-clr);
+}
+
+.one .btn-container {
+    margin-top: 1rem;
+}
+
+.two {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    
+}
+
+.days {    
+    text-align: center;    
+}
+
+.days h3 {
+    font-size: 0.832rem;
+    text-transform: uppercase;
+    color: var(--seconday-clr);
+}
+
+.days i {
+    font-size: 1.743rem;
+    color: blue;
+    margin: 0.543rem 0;
+}
+
+.days h4 {
+    font-size: 1.3rem;
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 0.523rem;
+}
+
+.days h5 {
+    font-size: 0.622rem;
+    font-weight: 550;
+    text-transform: uppercase;
+    color: var(--primary-clr);
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-container p {
+    font-size: 0.865rem;
+    text-transform: uppercase;
+}
+
+.btn-container > button {
+    background: transparent;
+    border: transparent;
+    font-size: 1.134rem;
+}
+
+.btn-container > button i:hover {
+    cursor: pointer;    
+    color: blue;
+}
+
+button i {   
+    color: tomato;    
+}
