@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/style/sylte.css" />
+		<title>Tip Calculator</title>
+	</head>
+	<body>
+		<h1 class="heading">tip calculator</h1>
+		<div class="wrapper">
+			<div class="answer">
+				<p>result</p>
+				<div class="billTax">
+					<span>bill tax</span>
+					<span class="tip__value" id="billTax">0</span>
+				</div>
+				<div class="tipTax">
+					<span>tip tax</span>
+					<span class="tip__value" id="tipTax">0</span>
+				</div>
+				<div class="totalBill">
+					<span>total bill</span>
+					<span class="tip__value" id="total">0</span>
+				</div>
+			</div>
+
+			<form>
+				<div class="form__control">
+					<label for="bill" class="form__label">bill</label>
+					<div class="form__input-container">
+						<div class="form__icon">$</div>
+						<input
+							type="text"
+							class="form__input"
+							id="billAmount"
+							placeholder="200"
+						/>
+					</div>
+				</div>
+				<div class="form__control">
+					<label for="bill" class="form__label">tax</label>
+					<div class="form__input-container">
+						<div class="form__icon">$</div>
+						<input
+							type="text"
+							class="form__input"
+							id="taxRate"
+							placeholder="7.5"
+						/>
+					</div>
+				</div>
+				<div class="form__control">
+					<label for="bill" class="form__label">tip</label>
+					<div class="form__input-container">
+						<div class="form__icon">$</div>
+						<input
+							type="text"
+							class="form__input"
+							id="tipRate"
+							placeholder="2.6"
+						/>
+					</div>
+				</div>
+				<div class="form__control form__btn-container">
+					<button type="submit" class="btn">calculate</button>
+				</div>
+			</form>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
